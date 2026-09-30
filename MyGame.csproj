@@ -1,24 +1,18 @@
-﻿<Project Sdk="Microsoft.NET.Sdk">
+<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
-    <OutputType>Exe</OutputType>
     <TargetFramework>net8.0-android</TargetFramework>
-    <ImplicitUsings>enable</ImplicitUsings>
+    <SupportedOSPlatformVersion>21.0</SupportedOSPlatformVersion>
+    <OutputType>Exe</OutputType>
     <Nullable>enable</Nullable>
-    <SupportedOSPlatformVersion>21</SupportedOSPlatformVersion>
-    <ApplicationId>com.mygame.app</ApplicationId>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <ApplicationId>com.companyname.mygame</ApplicationId>
     <ApplicationVersion>1</ApplicationVersion>
     <ApplicationDisplayVersion>1.0</ApplicationDisplayVersion>
-
-    <!-- غیرفعال کردن بررسی اجباری Workload که باعث ارور NETSDK1147 می‌شود -->
-    <NETCoreSdkIsPreview>true</NETCoreSdkIsPreview>
-    <EnableWorkloadResolver>false</EnableWorkloadResolver>
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="Newtonsoft.Json" Version="13.0.3" />
     <PackageReference Include="Raylib-cs" Version="6.0.0" />
-    <PackageReference Include="System.Numerics.Vectors" Version="4.6.0" />
   </ItemGroup>
 
 </Project>
